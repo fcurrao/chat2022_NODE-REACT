@@ -1,0 +1,7 @@
+
+La prueba consiste en un chat que tiene el front en React y un backend con Express y se comunican con Websockets.
+
+Habrá algunas cosas que no estén funcionando bien y que haya que mejorar en cuanto a código o funcionalidad. 
+
+No nos interesa tanto que quede 100% finalizado sino ver cómo se van encontrando problemas,
+la forma de encarar la solución y las oportunidades de mejora que encuentres
