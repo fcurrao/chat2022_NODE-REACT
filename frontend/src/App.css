@@ -32,33 +32,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.send{
+.send {
   width: 20% !important;
   margin: 1% !important;
 }
 
-.input-field, .textarea-field{
+.input-field,
+.textarea-field {
   margin-bottom: 0px !important;
   padding: 0px !important;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.init{
+.init {
   margin-bottom: 3% !important;
   height: 40px !important;
 }
 
-.noP{
-  margin:0px !important;
-  padding:0px !important;
+.noP {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .chat-container {
@@ -134,6 +136,10 @@
 
 .message-list {
   margin-top: 32px;
+  min-height: 380px;
+  overflow: scroll;
+  max-height: 300px;
+  overflow-x: hidden;
 }
 
 .message-item {
@@ -141,7 +147,7 @@
   align-items: center;
   margin-bottom: 16px;
 }
-  
+
 
 .message-user-image {
   width: 30px;
@@ -156,22 +162,38 @@
   border-radius: 12px;
   max-width: 70%;
   height: 25px;
+  height: auto;
 }
 
 .message-user {
   font-weight: bold;
 }
 
+.imgChat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-image{
+  width: 260px;
+}
+
 .message-item.self .message-bubble {
   background-color: #3b82f6;
   color: #ffffff;
   align-self: flex-end;
+  margin-right: 1%;
+  height: auto;
 }
 
-.message-item  {
-flex-direction: row-reverse !important;
+.message-item {
+  flex-direction: row-reverse !important;
 }
-.message-item.other  {
+
+.message-item.other {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -180,4 +202,9 @@ flex-direction: row-reverse !important;
 
 .empty-chat {
   color: #9ca3af;
+  height: 300px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
 }
